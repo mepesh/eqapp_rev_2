@@ -1,1 +1,0 @@
-web: gunicorn eqapp_rev_2:app
