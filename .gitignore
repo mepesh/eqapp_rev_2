@@ -1,5 +1,31 @@
-# Object file
-*.o
+*.py[co]
+*.DS_*
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
 
-# Ada Library Information
-*.ali
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+
+#Translations
+*.mo
+
+#Mr Developer
+venv
+*.pyc
+build
+Status API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Pri
