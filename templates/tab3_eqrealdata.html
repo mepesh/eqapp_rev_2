@@ -1,0 +1,54 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <title>Earth Quake History</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <script type="text/javascript" src="../static/asd.js"></script>
+</head>
+
+<body>
+<div class="tabs">
+    <ul class="tab-links">
+        <li><a href="http://127.0.0.1:5000/index">Main Page</a></li>
+        <li><a href="http://127.0.0.1:5000/eqhis">EarthQuake History</a></li>
+        <li class="active"><a href="http://127.0.0.1:5000/eqrealdata">Real Data</a></li>
+        <li><a href="http://127.0.0.1:5000/about">About</a></li>
+    </ul>
+    <div class="tab-content">
+    	<div id="tab1" class="tab">
+        </div>
+        <div id="tab2" class="tab">
+        </div>
+        <div id="tab3" class="tab active">
+            <p>Tab #3 content goes here!</p>
+            <p>Real EarthQuake Data :</p>
+            <table border=1>
+			<tr>
+				<th>S.N.</th>
+				<th>Date</th>
+				<th>Time</th>
+				<th>_X_</th>
+				<th>_Y_</th>
+				<th>_Z_</th>
+				<th>Magnitude</th>
+			</tr>
+			{% for key, value in result.iteritems() %}
+			<tr>
+			<th> {{ key }} </th>
+			<td> {{ value[0] }} </td>
+			<td> {{ value[1] }} </td>
+			<td> {{ value[2] }} </td>
+			<td> {{ value[3] }} </td>
+			<td> {{ value[4] }} </td>
+			<td> {{ value[5] }} </td>
+			</tr>
+			{% endfor %}
+			</table>
+        </div> 
+        <div id="tab4" class="tab">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
